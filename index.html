@@ -24,6 +24,13 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Type it -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0a24532329.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- CSS & JS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="/css//header.css" />
@@ -33,11 +40,11 @@
     <!-- Header -->
     <header class="header">
       <div class="header__logo">
-        <img
+        <!-- <img
           class="header__logo__img"
           src="images/favicon.ico"
           alt="logo-img"
-        />
+        /> -->
         <h1 class="header__logo__title">
           <a href="#">Yuji&#39;s <span>portfolio</span></a>
         </h1>
@@ -62,7 +69,32 @@
           src="/images/profile.png"
           alt="Yuji's profile"
         />
-        <h2 class="home__title">안녕하세요</h2>
+        <h2 class="home__title">
+          신입 <span id="type" style="color: pink"></span> 장유지입니다
+        </h2>
+        <div class="home__description-container">
+          <p class="home__description">
+            저는 우물 안의 개구리가 아닌 우물 밖 개구리처럼, 넓은 시야로
+            다양하고 배우고, 경험하고 싶습니다. 🐸
+          </p>
+          <p class="home__description">
+            편안함에 머물러 정체되지 않고, 흐르는 물처럼 꾸준히 성장하는
+            개발자가 되고 싶습니다.
+          </p>
+          <p class="home__description">
+            프론트엔드는 사용자와 가장 가까이 존재하는 만큼 예민하고 빠르게
+            변화해야하며, 새로운 기술을 지속적으로 익히는것에 대해 두려움보다는
+            호기심과 열정으로 즐기는 개발자가 되어야한다고 생각합니다.
+          </p>
+          <p class="home__description">
+            새로운 기술에 대한 열린 마음과 열정으로, 프론트엔드 개발자로서의
+            꿈을 향해 노력하고 있습니다. 여정을 함께 시작하고, 함께 성장해
+            나가는 기회를 기대하고 있습니다. 🙌🏻
+          </p>
+        </div>
+        <div class="arrow-down">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
       </section>
       <section id="about">
         <ul class="list-item-wrapper">
@@ -74,7 +106,6 @@
           <li class="list-item"><span>💎 </span>CSS즐거워요</li>
           <li class="list-item"><span>🖥 </span>사용자와가까운 개발자</li>
           <li class="list-item"><span>📱 </span>사용자경험 향상</li>
-
           <li class="list-item"><span>✍️ </span>기록 회고</li>
           <li class="list-item"><span>🗣 </span>소통</li>
           <li class="list-item"><span>🙏🏻 </span>개발하고싶어요</li>
@@ -85,6 +116,7 @@
           <li class="list-item"><span>✉️ </span>기다릴게요</li>
         </ul>
       </section>
+      <section></section>
     </main>
   </body>
 </html>
