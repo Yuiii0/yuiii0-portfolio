@@ -7,7 +7,7 @@ new TypeIt("#type", {
 
 //About
 const listItems = document.querySelectorAll(".list-item");
-
+const helloImage = document.querySelector(".hello-img-container");
 const listStyleChangeStartY = 240;
 const listStyleChangeEndY = 1000;
 const division =
@@ -27,5 +27,26 @@ window.addEventListener("scroll", () => {
     );
 
     listItems[targetIndex].id = "on";
+  }
+
+  const scrollYBottom = window.scrollY + document.documentElement.clientHeight;
+
+  if (
+    scrollYBottom > helloImage.offsetTop + 50 &&
+    scrollYBottom < helloImage.offsetTop + helloImage.offsetHeight + 100
+  ) {
+    console.log("run");
+    const translateX =
+      80 -
+      (80 * 1.3 * (scrollYBottom - helloImage.offsetTop)) /
+        (helloImage.offsetHeight + 100);
+    const translateY =
+      -30 +
+      (30 * 1.3 * (scrollYBottom - helloImage.offsetTop)) /
+        (helloImage.offsetHeight + 100);
+    const rotateDegree =
+      -(5 * 1.7 * (scrollYBottom - helloImage.offsetTop)) /
+      (helloImage.offsetHeight + 100);
+    helloImage.style.transform = `translate(${translateX}px, ${translateY}px) rotate(${rotateDegree}deg)`;
   }
 });

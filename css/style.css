@@ -154,7 +154,7 @@ main {
   display: flex;
   justify-content: right;
   height: 340px;
-  transform: translate(40px, -30px) rotate(-10deg);
+  transform: translate(80px, -30px) rotate(0deg);
 }
 
 .hello-img {
