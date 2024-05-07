@@ -31,10 +31,15 @@
       src="https://kit.fontawesome.com/0a24532329.js"
       crossorigin="anonymous"
     ></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- CSS & JS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="/css//header.css" />
     <script src="src/main.js" defer></script>
+    <script src="src/fadeIn.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -119,33 +124,32 @@
           <img id="hello-img" src="/images/hello.png" alt="hello" />
         </div>
       </section>
-
       <section id="skills" class="section">
-        <div class="skills-container max-container">
-          <ul class="skill">
+        <ul class="skills-container max-container">
+          <li class="skill fade-in">
             <h2 class="skill__title">주요 Skill</h2>
-            <li class="skill__items">
+            <div class="skill__items">
               <p class="skill__item">
                 Next.js, React, TypeScript, JavaScript, HTML/CSS, Restful API
               </p>
               <img src="/images/main-skill.png" alt="main-skills" />
-            </li>
-          </ul>
-          <ul class="skill">
+            </div>
+          </li>
+          <li class="skill fade-in">
             <h2 class="skill__title">사용해본 Skill</h2>
-            <li class="skill__items">
+            <div class="skill__items">
               <p class="skill__item">Recoil, Redux, Node.js</p>
               <img src="/images/skill.png" alt="experienced-skills" />
-            </li>
-          </ul>
-          <ul class="skill">
+            </div>
+          </li>
+          <li class="skill fade-in">
             <h2 class="skill__title">협업 Tool</h2>
-            <li class="skill__items">
-              <p class="skill__item">Github, Jira, Slack, Vercel, Figma</p>
+            <div class="skill__items">
+              <div class="skill__item">Github, Jira, Slack, Vercel, Figma</div>
               <img src="/images/tool.png" alt="tools" />
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
       </section>
       <section id="projects"></section>
     </main>
