@@ -26,6 +26,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   margin: 0;
   user-select: none;
+  background-color: var(--color-black);
 }
 
 h1,
@@ -281,7 +282,8 @@ main {
   background-color: var(--color-black);
   height: 100vh;
   color: var(--color-white);
-  padding-top: 20rem;
+  padding-top: 14rem;
+  position: relative;
 }
 
 .contact__container {
@@ -293,7 +295,47 @@ main {
   margin-top: 1rem;
   font-size: 1.8rem;
   font-family: "Raleway";
+  margin-bottom: 4rem;
 }
+
 .contact__container img {
   width: 250px;
+  animation: upAndDown 1s infinite;
+}
+.contact__icon__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contact__icon__tistory {
+  width: 32px;
+  height: 32px;
+}
+.fa-envelope {
+  font-size: 1.6rem;
+  opacity: 0.6;
+  transform: translateY(-2px);
+}
+.email {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  font-size: 12px;
+  color: gray;
+  opacity: 0.7;
+  text-align: center;
+}
+.copyrights {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  font-size: 12px;
+  color: gray;
+  opacity: 0.7;
 }
