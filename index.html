@@ -34,22 +34,25 @@
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- CSS & JS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="/css//header.css" />
     <script src="src/main.js" defer></script>
     <script src="src/fadeIn.js" defer></script>
+    <script src="src/swiper.js" defer></script>
+    <script src="src/horizontal-scroll.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="header__logo">
-        <!-- <img
-          class="header__logo__img"
-          src="images/favicon.ico"
-          alt="logo-img"
-        /> -->
         <h1 class="header__logo__title">
           <a href="#">Yuji&#39;s <span>portfolio</span></a>
         </h1>
@@ -101,7 +104,7 @@
           <i class="fa-solid fa-chevron-down"></i>
         </div>
       </section>
-      <section id="about" class="section">
+      <section id="about">
         <ul class="list-item-wrapper">
           <li class="list-item"><span>👋🏻 </span>장유지</li>
           <li class="list-item"><span>👩🏻‍🎓 </span>전자통신공학사</li>
@@ -151,7 +154,51 @@
           </li>
         </ul>
       </section>
-      <section id="projects"></section>
+      <section id="projects">
+        <div class="sticky-parent">
+          <div class="sticky">
+            <div class="project__list">
+              <div class="project__list__item">
+                <div>
+                  <img
+                    src="/images/project-balnaco.png"
+                    alt="project-balnaco"
+                    class="project__list__item__img"
+                  />
+                  <div>
+                    <h3 class="project__title">BLANCO</h3>
+                    <p>커머스</p>
+                    <p>기술스택</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project__list__item">
+                <div>
+                  <img
+                    src="/images/project-cultureland.png"
+                    alt="project-cultureland"
+                    class="project__list__item__img"
+                  />
+                  <div class="project__description">
+                    <h3 class="project__title">CultureLand</h3>
+                    <p>커머스</p>
+                    <p>기술스택</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section id="contact" class="section">
+          <div class="contact__container">
+            <img src="/images/contact.png" alt="contact" />
+            <h3>CONTACT</h3>
+          </div>
+          <div>
+            <p>©2024 Yuiii0 All rights reserved.</p>
+          </div>
+        </section>
+      </section>
     </main>
   </body>
 </html>
