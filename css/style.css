@@ -62,7 +62,7 @@ button:focus {
 
 /* Common */
 .section {
-  padding: 6rem;
+  padding: 8rem 6rem;
   text-align: center;
 }
 .max-container {
@@ -225,9 +225,6 @@ main {
 }
 
 /* Projects */
-#projects {
-  height: 5000px;
-}
 
 .sticky-parent {
   height: 700vh;
