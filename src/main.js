@@ -50,3 +50,27 @@ window.addEventListener("scroll", () => {
     helloImage.style.transform = `translate(${translateX}px, ${translateY}px) rotate(${rotateDegree}deg)`;
   }
 });
+
+//nav
+document.querySelectorAll(".header__menu__item").forEach((item) => {
+  item.addEventListener("click", function (event) {
+    event.preventDefault(); // 기본 동작 막기
+
+    const targetId = this.getAttribute("href"); // 클릭한 링크의 href 속성 값 가져오기
+    const targetElement = document.querySelector(targetId); // 해당 ID를 가진 요소 찾기
+
+    if (targetElement) {
+      if (targetId === "#projects") {
+        const stickyParent = document.querySelector(".sticky-parent");
+        if (stickyParent) {
+          stickyParent.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    }
+  });
+});
