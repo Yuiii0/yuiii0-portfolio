@@ -184,7 +184,7 @@ main {
   flex-direction: column;
   gap: 1.3rem;
   background-color: #ffc934;
-  max-width: 340px;
+  width: 330px;
   padding: 2rem;
   border-radius: 1rem;
   color: var(--color-white);
@@ -192,6 +192,14 @@ main {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+@media screen and (max-width: 624px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
 .skill:nth-child(2) {
   background-color: #ce648b;
 }
