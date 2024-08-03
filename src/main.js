@@ -14,7 +14,6 @@ const division =
   (listStyleChangeEndY - listStyleChangeStartY) / listItems.length;
 
 window.addEventListener("scroll", () => {
-  console.log(scrollY);
   if (document.getElementById("on"))
     document.getElementById("on").removeAttribute("id"); //나타나고없어지고 반복
   if (
@@ -35,7 +34,6 @@ window.addEventListener("scroll", () => {
     scrollYBottom > helloImage.offsetTop + 50 &&
     scrollYBottom < helloImage.offsetTop + helloImage.offsetHeight + 100
   ) {
-    console.log("run");
     const translateX =
       80 -
       (80 * 1.3 * (scrollYBottom - helloImage.offsetTop)) /
